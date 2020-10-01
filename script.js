@@ -7,6 +7,13 @@ var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m"
 var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var specialChar = ["!", "@", "#", "$", "%", "&", "+", "-", ".", "*",];
 
+// Variables for Prompts
+var confirmLength = "";
+var confirmNumbers;
+var confirmLowerCase;
+var confirmUpperCase;
+var confirmSpecialChar;
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
