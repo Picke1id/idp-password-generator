@@ -14,6 +14,9 @@ var confirmLowerCase;
 var confirmUpperCase;
 var confirmSpecialChar;
 
+// Variable for code selections to be concatenated
+var selection;
+
 // Prompt for user to confirm length of password
 function generatePassword() {
   var confirmLength = (prompt("How many characters would you like to include in your password? Choose between 8 and 25."));
@@ -38,6 +41,11 @@ function generatePassword() {
   // Condition if user does not select any confirmed criteria
   if (!confirmNumbers, !confirmLowerCase, !confirmUpperCase, !confirmSpecialChar) {
     alert("You must select criteria!")
+  }
+
+  // Condition if user chooses all selections
+  else if (confirmNumbers, confirmLowerCase, confirmUpperCase, confirmSpecialChar) {
+    selection = numbers.concat(lowerCase, upperCase, specialChar) 
   }
 }
 
