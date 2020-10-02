@@ -19,14 +19,14 @@ var selection;
 
 // Prompt for user to confirm length of password
 function generatePassword() {
-  var confirmLength = (prompt("How many characters would you like to include in your password? Choose between 8 and 25."));
+  var confirmLength = (prompt("How many characters would you like to include in your password? Choose between 8 and 128."));
 
   // Condition if user does not enter a value
   if (!confirmLength) {
       alert("You must enter a value!");
   // Condition if user chooses a value outside of the parameters provided
-  } else if (confirmLength <= 7 || confirmLength >= 26) {
-      alert("Your password must be between 8 and 25 characters!");
+  } else if (confirmLength <= 7 || confirmLength >= 129) {
+      alert("Your password must be between 8 and 128 characters!");
   // Repeat length input back to user
   } else {
       alert(`Your password will contain ${confirmLength} characters.`);
