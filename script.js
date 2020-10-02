@@ -58,7 +58,7 @@ function generatePassword() {
   else if (confirmNumbers, confirmUpperCase, confirmSpecialChar) {
     selection = numbers.concat(upperCase, specialChar);
   }
-  else if (confirmlLowerCase, confirmUppercase, confirmSpecialChar) {
+  else if (confirmLowerCase, confirmUpperCase, confirmSpecialChar) {
     selection = lowerCase.concat(upperCase, specialChar);
   }
 
@@ -94,6 +94,15 @@ function generatePassword() {
   }
   else if (confirmSpecialChar) {
     selection = specialChar;
+  }
+
+  // Variable for array placeholder for user generated password based on criteria
+  var code = [];
+
+  // Random selection of password criteria
+  for (var i = 0; i < enter; i++) {
+    var randomCode = selection[Math.floor(Math.random() * selection.length)];
+    code.push(randomCode);
   }
 }
 
