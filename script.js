@@ -40,12 +40,12 @@ function generatePassword() {
   
   // Condition if user does not select any confirmed criteria
   if (!confirmNumbers, !confirmLowerCase, !confirmUpperCase, !confirmSpecialChar) {
-    alert("You must select criteria!")
+    alert("You must select criteria!");
   }
 
   // Condition if user chooses all selections
   else if (confirmNumbers, confirmLowerCase, confirmUpperCase, confirmSpecialChar) {
-    selection = numbers.concat(lowerCase, upperCase, specialChar) 
+    selection = numbers.concat(lowerCase, upperCase, specialChar);
   }
 
   // Conditions if only 3 options are selected
@@ -60,6 +60,26 @@ function generatePassword() {
   }
   else if (confirmlLowerCase, confirmUppercase, confirmSpecialChar) {
     selection = lowerCase.concat(upperCase, specialChar);
+  }
+
+  // Conditions if only 2 options are selected
+  else if (confirmNumbers, confirmLowerCase) {
+    selection = numbers.concat(lowerCase);
+  }
+  else if (confirmNumbers, confirmUpperCase) {
+    selection = numbers.concat(upperCase);
+  }
+  else if (confirmNumbers, confirmSpecialChar) {
+    selection = numbers.concat(specialChar);
+  }
+  else if (confirmLowerCase, confirmUpperCase) {
+    selection = lowerCase.concat(upperCase);
+  }
+  else if (confirmLowerCase, confirmSpecialChar) {
+    selection = lowerCase.concat(specialChar);
+  }
+  else if (confirmUpperCase, confirmSpecialChar) {
+    selection = upperCase.concat(specialChar);
   }
 }
 
