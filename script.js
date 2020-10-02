@@ -35,6 +35,10 @@ function generatePassword() {
   var confirmUpperCase = confirm("Do you want this password to contain upper case letters?")
   var confirmSpecialChar = confirm("Do you want this password to contain special characters?")
   
+  // Condition if user does not select any confirmed criteria
+  if (!confirmNumbers, !confirmLowerCase, !confirmUpperCase, !confirmSpecialChar) {
+    alert("You must select criteria!")
+  }
 }
 
 // Write password to the #password input 
