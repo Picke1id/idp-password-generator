@@ -81,6 +81,20 @@ function generatePassword() {
   else if (confirmUpperCase, confirmSpecialChar) {
     selection = upperCase.concat(specialChar);
   }
+
+  // Conditions if only 1 option is selected
+  else if (confirmNumbers) {
+    selection = numbers;
+  }
+  else if (confirmLowerCase) {
+    selection = lowerCase;
+  }
+  else if (confirmUpperCase) {
+    selection = upperCase;
+  }
+  else if (confirmSpecialChar) {
+    selection = specialChar;
+  }
 }
 
 // Write password to the #password input 
