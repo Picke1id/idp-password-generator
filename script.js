@@ -104,6 +104,11 @@ function generatePassword() {
     var randomCode = selection[Math.floor(Math.random() * selection.length)];
     code.push(randomCode);
   }
+  
+  // This joins and converts password array into a string
+  var password = code.join("");
+  writePassword(password);
+  
 }
 
 // Write password to the #password input 
