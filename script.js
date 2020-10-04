@@ -100,7 +100,7 @@ function generatePassword() {
   var code = [];
 
   // Random selection of password criteria
-  for (var i = 0; i < enter; i++) {
+  for (var i = 0; i < confirmLength; i++) {
     var randomCode = selection[Math.floor(Math.random() * selection.length)];
     code.push(randomCode);
   }
@@ -117,8 +117,7 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", generatePassword);
