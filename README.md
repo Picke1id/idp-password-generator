@@ -11,7 +11,7 @@ Here is an example of how the password generator works:
 
 ## Features
 * Responsive user interface
-* HTML and CSS poweredby Javascript
+* HTML and CSS powered by Javascript
 * Adaptive screen sizing
 * Prompts for user-selected criteria
 
