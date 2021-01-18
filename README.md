@@ -24,3 +24,6 @@ After the repository has been cloned, click on the index.html and open in browse
 > You can reference the full license [here](https://github.com/Picke1id/idp_horiseon_code_refactor/blob/master/License).
 
 This project is licensed under the terms of the MIT license.
+
+## Link
+* Password Generator URL: (https://picke1id.github.io/idp-password-generator/)
